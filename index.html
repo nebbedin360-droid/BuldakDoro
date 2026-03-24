@@ -1,207 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buldak Doro Restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buldak Doro - Chicken Restaurant</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ffcc00, #ff3b3b);
-      color: white;
-    }
-
-    header {
-      padding: 30px;
-      text-align: center;
-      background: url('https://images.unsplash.com/photo-1604908177522-0408dba4a0c5') center/cover no-repeat;
-      color: white;
-    }
-
-    header h1 {
-      font-size: 40px;
-      margin: 0;
-      text-shadow: 2px 2px 5px black;
-    }
-
-    header p {
-      font-size: 18px;
-      text-shadow: 1px 1px 3px black;
-    }
-
-    .container {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      margin: 10px;
-      background: #ff3b3b;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background: #ff1f1f;
-    }
-
-    .section {
-      margin-top: 30px;
-      padding: 20px;
-    }
-    .nebbedin-footer {
-  background: #0f172a;
-  padding: 12px;
-  text-align: center;
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: white;
 }
 
-.nebbedin-content {
+header {
+  background: linear-gradient(90deg,#ff512f,#dd2476);
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: black;
+  padding: 10px;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1604908177522-4025b3b3c0a2') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  text-align: center;
 }
 
-.nebbedin-content img {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
+.hero h1 {
+  font-size: 50px;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.nebbedin-text p {
-  margin: 0;
-  color: white;
-  font-size: 13px;
+.section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.nebbedin-text a {
-  color: #38bdf8;
-  font-size: 12px;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+}
+
+.btn {
+  background: gold;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-.nebbedin-text a:hover {
-  text-decoration: underline;
-}
-
-    iframe {
-      width: 90%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #000;
-      margin-top: 30px;
-    }
-    
-  </style>
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Buldak Doro </h1>
-    <h1>(Chicken Restaurant)</h1>
-    <p>Spicy & Delicious Chicken Foods in Addis Ababa</p>
-  </header>
+<header>BULDAK DORO 🔥</header>
 
-  <div class="container">
-    <a class="btn" href="tel:0978561111">Call Now</a>
-    
-  </div>
+<nav>
+<a href="#">Home</a>
+<a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <div class="section">
-    <h2>Location</h2>
-    <p>Inside Tiga Hotel,Bole, Addis Ababa</p>
+<section class="hero">
+<h1>Spicy Korean Chicken Experience 🍗🔥</h1>
+</section>
 
-    <iframe 
-      src="https://www.google.com/maps?q=Tiga%20Hotel%20Addis%20Ababa&output=embed"
-      width="90%"
-      height="300"
-      style="border:0; border-radius:10px;"
-      allowfullscreen=""
-      loading="lazy">
-    </iframe>
-  </div>
+<section class="section">
+<h2>About Us</h2>
+<p>Welcome to Buldak Doro, the home of spicy grilled chicken. Located inside Tiga Hotel, we bring bold flavors and unforgettable taste.</p>
+</section>
 
-  <div class="section">
-    <h2>About Us</h2>
-    <p>
-      We serve spicy chicken (Buldak) and local chicken dishes with fresh ingredients.
-      Best taste experience inside Addis Ababa.
-    </p>
-  </div>
+<section class="section" id="menu">
+<h2>Our Menu</h2>
+<div class="menu">
+<div class="card">🔥 Buldak Chicken - 450 ETB</div>
+<div class="card">🍗 Fried Chicken - 300 ETB</div>
+<div class="card">🌶 Extra Spicy Wings - 350 ETB</div>
+<div class="card">🥤 Drinks - 100 ETB</div>
+</div>
+</section>
 
-  <div class="section">
-    <h2>Menu</h2>
-    <div style="display:grid; gap:12px; max-width:700px; margin:0 auto;">
-      <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:10px;">
-        <h3>Full Fried Chicken (14 Pcs)</h3>
-        <p>ETB 2,200.00</p>
-      </div>
+<section class="section" id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1604908177522-4025b3b3c0a2">
+<p>Signature spicy grilled chicken full of flavor 🔥</p>
 
-      <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:10px;">
-        <h3>Half Fried Chicken (7 Pcs)</h3>
-        <p>ETB 1,200.00</p>
-      </div>
+<img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92">
+<p>Crispy fried chicken served hot and fresh 🍗</p>
 
-      <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:10px;">
-        <h3>Honey Garlic Chicken (14 Pcs)</h3>
-        <p>ETB 2,200.00</p>
-      </div>
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<p>Delicious Korean style wings 🌶</p>
 
-      <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:10px;">
-        <h3>Honey Garlic Chicken (7 Pcs)</h3>
-        <p>ETB 1,200.00</p>
-      </div>
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<p>Chicken burger with premium taste 🍔</p>
 
-      <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:10px;">
-        <h3>Spicy Full Fried Chicken (14 Pcs)</h3>
-        <p>ETB 2,200.00</p>
-      </div>
+<img src="https://images.unsplash.com/photo-1525755662778-989d0524087e">
+<p>Rice bowls with spicy sauce 🍚</p>
 
-      <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:10px;">
-        <h3>Spicy Half Fried Chicken (7 Pcs)</h3>
-        <p>ETB 1,200.00</p>
-      </div>
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+<p>Mixed platter for sharing 🍗🔥</p>
 
-      <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:10px;">
-        <h3>Sweet & Sour Chicken (Boneless)</h3>
-        <p>ETB 900.00</p>
-      </div>
-      <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:10px;">
-        <h3>And More</h3>
-        <p></p>
-      </div>
-    </div>
-  </div>
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+<p>Refreshing drinks and sides 🥤</p>
+</div>
+</section>
 
-  <footer>
-    <p>© 2026 Buldak Doro Restaurant. All rights reserved.</p>
-  </footer>
-<footer class="nebbedin-footer">
-  
-  <div class="nebbedin-content">
-    
-    <img src="nebbedin-logo.png" alt="Nebbedin Logo">
-    
-    <div class="nebbedin-text">
-      <p>Made by Nebbedin</p>
-      <a href="tel:+251967922324">📞 Call Me</a>
-    </div>
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+<p>📞 097 856 1111</p>
+<a class="btn" href="tel:0978561111">Call Now</a>
 
-  </div>
+<h3>Find Us</h3>
+<iframe class="map" src="https://maps.google.com/maps?q=8.987108,38.787297&z=15&output=embed"></iframe>
+</section>
 
+<footer>
+<p>© 2026 Buldak Doro | Made by Nebil</p>
+<div style="margin-top:20px;">
+<img src="logo.png" style="width:120px;">
+<br><br>
+<a class="btn" href="tel:0967922324">Call Nebbedin 📞</a>
+</div>
 </footer>
+
 </body>
 </html>
